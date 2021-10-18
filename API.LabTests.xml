@@ -1,0 +1,406 @@
+<?xml version="1.0"?>
+<doc>
+    <assembly>
+        <name>API.LabTests</name>
+    </assembly>
+    <members>
+        <member name="M:API.LabTests.Common.Security.encrypt(System.String,System.String)">
+            <summary>
+            Encrypt string
+            </summary>
+            <param name="encryptString"></param>
+            /// <param name="encryptionKey"></param>
+            <returns></returns>
+        </member>
+        <member name="M:API.LabTests.Common.Security.Decrypt(System.String,System.String)">
+            <summary>
+            Decrypt string
+            </summary>
+            <param name="cipherText"></param>
+            /// <param name="encryptionKey"></param>
+            <returns></returns>
+        </member>
+        <member name="M:API.LabTests.Controllers.AuthenticatorController.Login(API.LabTests.Entity.User)">
+            <summary>
+            Login to authenticate user
+            </summary>
+            <param name="login"></param>
+            <returns></returns>
+            
+        </member>
+        <member name="M:API.LabTests.Controllers.AuthenticatorController.GenerateJSONWebToken(API.LabTests.Entity.User)">
+            <summary>
+            Generate authentication token
+            </summary>
+            <param name="userInfo"></param>
+            <returns></returns>
+        </member>
+        <member name="M:API.LabTests.Controllers.AuthenticatorController.AuthenticateUser(API.LabTests.Entity.User)">
+            <summary>
+            Authenticat user
+            </summary>
+            <param name="login"></param>
+            <returns></returns>
+        </member>
+        <member name="M:API.LabTests.Controllers.LabTestController.Get">
+            <summary>
+            Get all tests
+            </summary>
+            <returns></returns>
+        </member>
+        <member name="M:API.LabTests.Controllers.LabTestController.Get(System.Int32)">
+            <summary>
+            Get test by id
+            </summary>
+            <param name="id"></param>
+            <returns></returns>
+        </member>
+        <member name="M:API.LabTests.Controllers.LabTestController.Create(API.LabTests.Entity.LabTest)">
+            <summary>
+            Create test
+            </summary>
+            <param name="labTest"></param>
+            <returns></returns>
+        </member>
+        <member name="M:API.LabTests.Controllers.LabTestController.Update(System.Int32,API.LabTests.Entity.LabTest)">
+            <summary>
+            Update test
+            </summary>
+            <param name="id"></param>
+            <param name="labTest"></param>
+            <returns></returns>
+        </member>
+        <member name="M:API.LabTests.Controllers.LabTestController.Delete(System.Int32)">
+            <summary>
+            Delete test
+            </summary>
+            <param name="id"></param>
+            <returns></returns>
+        </member>
+        <member name="M:API.LabTests.Controllers.PatientController.Get">
+            <summary>
+            Get all patients
+            </summary>
+            <returns></returns>
+        </member>
+        <member name="M:API.LabTests.Controllers.PatientController.Get(System.Int32)">
+            <summary>
+            Get patient by id
+            </summary>
+            <param name="id"></param>
+            <returns></returns>
+        </member>
+        <member name="M:API.LabTests.Controllers.PatientController.Create(API.LabTests.Entity.Patient)">
+            <summary>
+            Create patient
+            </summary>
+            <param name="patient"></param>
+            <returns></returns>
+        </member>
+        <member name="M:API.LabTests.Controllers.PatientController.Update(System.Int32,API.LabTests.Entity.Patient)">
+            <summary>
+            Update patient
+            </summary>
+            <param name="id"></param>
+            <param name="patient"></param>
+            <returns></returns>
+        </member>
+        <member name="M:API.LabTests.Controllers.PatientController.Delete(System.Int32)">
+            <summary>
+            Delete patient
+            </summary>
+            <param name="id"></param>
+            <returns></returns>
+        </member>
+        <member name="M:API.LabTests.Controllers.ReportController.Get">
+            <summary>
+            Get all records
+            </summary>
+            <returns></returns>
+        </member>
+        <member name="M:API.LabTests.Controllers.ReportController.Get(System.Int32)">
+            <summary>
+            Get report by id
+            </summary>
+            <param name="id">Report id</param>
+            <returns></returns>
+        </member>
+        <member name="M:API.LabTests.Controllers.ReportController.GetByLabTest(System.Int32,System.DateTime,System.DateTime)">
+            <summary>
+            Get report by report created date
+            </summary>
+            <param name="labTestId">LabTest Id</param>
+            <param name="fromDate">Start Date</param>
+            <param name="toDate">End Date</param>
+            <returns></returns>
+        </member>
+        <member name="M:API.LabTests.Controllers.ReportController.Create(API.LabTests.Entity.Report)">
+            <summary>
+            Create report
+            </summary>
+            <param name="report"></param>
+            <returns></returns>
+        </member>
+        <member name="M:API.LabTests.Controllers.ReportController.Update(System.Int32,API.LabTests.Entity.Report)">
+            <summary>
+            Update report
+            </summary>
+            <param name="id"></param>
+            <param name="report"></param>
+            <returns></returns>
+        </member>
+        <member name="M:API.LabTests.Controllers.ReportController.Delete(System.Int32)">
+            <summary>
+            Delete report
+            </summary>
+            <param name="id"></param>
+            <returns></returns>
+        </member>
+        <member name="P:API.LabTests.Entity.Report.Id">
+            <summary>
+            Report id
+            </summary>
+        </member>
+        <member name="P:API.LabTests.Entity.Report.PatientId">
+            <summary>
+            Patient id
+            </summary>
+        </member>
+        <member name="P:API.LabTests.Entity.Report.LabTestId">
+            <summary>
+            Test id
+            </summary>
+        </member>
+        <member name="P:API.LabTests.Entity.Report.EnteredTime">
+            <summary>
+            Entered Time
+            </summary>
+        </member>
+        <member name="P:API.LabTests.Entity.Report.TimeOfTest">
+             <summary>
+            Time of Test
+             </summary>
+        </member>
+        <member name="P:API.LabTests.Entity.Report.ReportCreatedOn">
+            <summary>
+            Report cretated on
+            </summary>
+        </member>
+        <member name="P:API.LabTests.Entity.Report.Result">
+            <summary>
+            Test result
+            </summary>
+        </member>
+        <member name="P:API.LabTests.Entity.Report.Patient">
+            <summary>
+            Patient details
+            </summary>
+        </member>
+        <member name="P:API.LabTests.Entity.Report.LabTest">
+            <summary>
+            Test details
+            </summary>
+        </member>
+        <member name="P:API.LabTests.Entity.LabTest.Id">
+            <summary>
+            Test id
+            </summary>
+        </member>
+        <member name="P:API.LabTests.Entity.LabTest.TestType">
+            <summary>
+            Type of test 
+            </summary>
+        </member>
+        <member name="P:API.LabTests.Entity.LabTest.Description">
+            <summary>
+            Test description
+            </summary>
+        </member>
+        <member name="P:API.LabTests.Entity.LabTest.SampleType">
+            <summary>
+            Sample type 
+            </summary>
+        </member>
+        <member name="P:API.LabTests.Entity.Patient.Id">
+            <summary>
+            Patient id
+            </summary>
+        </member>
+        <member name="P:API.LabTests.Entity.Patient.Name">
+            <summary>
+            Patient Name
+            </summary>       
+        </member>
+        <member name="P:API.LabTests.Entity.Patient.DateOfBirth">
+            <summary>
+            Date of birth of patient
+            </summary>
+        </member>
+        <member name="P:API.LabTests.Entity.Patient.Gender">
+            <summary>
+            Gender 
+            </summary>
+        </member>
+        <member name="P:API.LabTests.Entity.Patient.ContactNumber">
+            <summary>
+            Contact number
+            </summary>
+        </member>
+        <member name="P:API.LabTests.Entity.Patient.Address">
+            <summary>
+            Address
+            </summary>
+        </member>
+        <member name="P:API.LabTests.Entity.Patient.EmailId">
+            <summary>
+            Email id
+            </summary>
+        </member>
+        <member name="M:API.LabTests.Repositories.LabTestRepository.Create(API.LabTests.Entity.LabTest)">
+            <summary>
+            Create lab test
+            </summary>
+            <param name="labTest"></param>
+            <returns></returns>
+        </member>
+        <member name="M:API.LabTests.Repositories.LabTestRepository.Get">
+            <summary>
+            Get all lab tests
+            </summary>
+            <returns></returns>
+        </member>
+        <member name="M:API.LabTests.Repositories.LabTestRepository.Get(System.Int32)">
+            <summary>
+            Get lab test by id
+            </summary>
+            <param name="id"></param>
+            <returns></returns>
+        </member>
+        <member name="M:API.LabTests.Repositories.LabTestRepository.Update(API.LabTests.Entity.LabTest)">
+            <summary>
+            Update lab test
+            </summary>
+            <param name="labTest"></param>
+            <returns></returns>
+        </member>
+        <member name="M:API.LabTests.Repositories.LabTestRepository.labTestMapping(API.LabTests.Entity.LabTest,API.LabTests.Entity.LabTest)">
+            <summary>
+            Lab test mapping
+            </summary>
+            <param name="orgLabTest"></param>
+            <param name="updatedLabTest"></param>
+        </member>
+        <member name="M:API.LabTests.Repositories.LabTestRepository.Delete(System.Int32)">
+            <summary>
+            Delete lab test
+            </summary>
+            <param name="id"></param>
+            <returns></returns>
+        </member>
+        <member name="M:API.LabTests.Repositories.PatientRepository.Create(API.LabTests.Entity.Patient)">
+            <summary>
+            Create patient
+            </summary>
+            <param name="patient"></param>
+            <returns></returns>
+        </member>
+        <member name="M:API.LabTests.Repositories.PatientRepository.Get">
+            <summary>
+            Get all patients
+            </summary>
+            <returns></returns>
+        </member>
+        <member name="M:API.LabTests.Repositories.PatientRepository.Get(System.Int32)">
+            <summary>
+            Get patient by id
+            </summary>
+            <param name="id"></param>
+            <returns></returns>
+        </member>
+        <member name="M:API.LabTests.Repositories.PatientRepository.Update(API.LabTests.Entity.Patient)">
+            <summary>
+            Update patient
+            </summary>
+            <param name="patient"></param>
+            <returns></returns>
+        </member>
+        <member name="M:API.LabTests.Repositories.PatientRepository.patientMapping(API.LabTests.Entity.Patient,API.LabTests.Entity.Patient)">
+            <summary>
+            Patient mapping with patient
+            </summary>
+            <param name="orgPatient"></param>
+            <param name="updatedPatient"></param>
+        </member>
+        <member name="M:API.LabTests.Repositories.PatientRepository.Delete(System.Int32)">
+            <summary>
+            Delete patient
+            </summary>
+            <param name="id"></param>
+            <returns></returns>
+        </member>
+        <member name="M:API.LabTests.Repositories.ReportRepository.Create(API.LabTests.Entity.Report)">
+            <summary>
+            Create report
+            </summary>
+            <param name="report"></param>
+            <returns></returns>
+        </member>
+        <member name="M:API.LabTests.Repositories.ReportRepository.Get">
+            <summary>
+            Get all reports
+            </summary>
+            <returns></returns>
+        </member>
+        <member name="M:API.LabTests.Repositories.ReportRepository.Get(System.Int32)">
+            <summary>
+            Get report by id
+            </summary>
+            <param name="id"></param>
+            <returns></returns>
+        </member>
+        <member name="M:API.LabTests.Repositories.ReportRepository.Get(System.Int32,System.DateTime,System.DateTime)">
+            <summary>
+            Get report for a given date range
+            </summary>
+            <param name="labTestId"></param>
+            <param name="from"></param>
+            <param name="to"></param>
+            <returns></returns>
+        </member>
+        <member name="M:API.LabTests.Repositories.ReportRepository.Update(API.LabTests.Entity.Report)">
+            <summary>
+            Update report
+            </summary>
+            <param name="report"></param>
+            <returns></returns>
+        </member>
+        <member name="M:API.LabTests.Repositories.ReportRepository.ReportMapping(API.LabTests.Entity.Report,API.LabTests.Entity.Report)">
+            <summary>
+            Map report with report in current context
+            </summary>
+            <param name="orgReport"></param>
+            <param name="updatedReport"></param>
+        </member>
+        <member name="M:API.LabTests.Repositories.ReportRepository.ValidateLabTest(API.LabTests.Entity.Report)">
+            <summary>
+            Check active patient and test
+            </summary>
+            <param name="report"></param>
+            <returns></returns>
+        </member>
+        <member name="M:API.LabTests.Repositories.ReportRepository.FormatReport(System.Collections.Generic.IEnumerable{API.LabTests.Entity.Report})">
+            <summary>
+            Get formatted report
+            </summary>
+            <param name="GetReports"></param>
+            <returns></returns>
+        </member>
+        <member name="M:API.LabTests.Repositories.ReportRepository.Delete(System.Int32)">
+            <summary>
+            Delete report
+            </summary>
+            <param name="id"></param>
+            <returns></returns>
+        </member>
+    </members>
+</doc>
