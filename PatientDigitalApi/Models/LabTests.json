@@ -1,0 +1,38 @@
+[
+  {
+    "LabReportId": 1,
+    "ReportType": "Blood test",
+    "Result": "All Good",
+    "TimeOfTest": "07.09.2021 14:37:40",
+    "EnteredTime": "07.10.2021 14:37:40",
+    "PatientId": 1,
+    "ReportCenterName": "Kalyani Nagar, Pune"
+  },
+  {
+    "LabReportId": 2,
+    "ReportType": "Urin test",
+    "Result": "All Good",
+    "TimeOfTest": "07.09.2021 14:37:40",
+    "EnteredTime": "07.10.2021 14:37:40",
+    "PatientId": 2,
+    "ReportCenterName": "Kalyani Nagar, Pune"
+  },
+  {
+    "LabReportId": 3,
+    "ReportType": "Suger test",
+    "Result": "Suger in limit",
+    "TimeOfTest": "07.09.2021 14:37:40",
+    "EnteredTime": "07.10.2021 14:37:40",
+    "PatientId": 3,
+    "ReportCenterName": "Kalyani Nagar, Pune"
+  },
+  {
+    "LabReportId": 4,
+    "ReportType": "Blood test",
+    "Result": "Low Hemoglobin",
+    "TimeOfTest": "07.09.2021 14:37:40",
+    "EnteredTime": "07.10.2021 14:37:40",
+    "PatientId": 4,
+    "ReportCenterName": "Kalyani Nagar, Pune"
+  }
+]

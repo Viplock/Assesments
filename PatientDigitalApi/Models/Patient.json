@@ -1,0 +1,30 @@
+[
+  {
+    "PatientId": 1,
+    "PName": "John",
+    "DOB": "07.10.1990 00:00:00",
+    "PGender": 0,
+    "ContactNumber": "9876543210"
+  },
+  {
+    "PatientId": 2,
+    "PName": "Rajesh",
+    "DOB": "11.10.1990 00:00:00",
+    "PGender": 0,
+    "ContactNumber": "9876543211"
+  },
+  {
+    "PatientId": 3,
+    "PName": "Abrahim",
+    "DOB": "07.09.1990 00:00:00",
+    "PGender": 2,
+    "ContactNumber": "9876543212"
+  },
+  {
+    "PatientId": 4,
+    "PName": "Alisha",
+    "DOB": "07.01.1990 00:00:00",
+    "PGender": 1,
+    "ContactNumber": "9876543213"
+  }
+]
