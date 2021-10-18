@@ -2,9 +2,10 @@
 
 **User's Section**
 There are 6 codebases in this repository with different branches-
-For frontend as
+For frontend
 
  Kiran Garad
+ 
 For backend as
   VipulPratap
   Ajitfunde
