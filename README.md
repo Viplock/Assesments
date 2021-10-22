@@ -1,7 +1,7 @@
 
 
 **User's Section**
-There are 6 codebases in this repository with different branches-
+There are 3 codebases in this repository with different branches-
 
 **For frontend**
 
